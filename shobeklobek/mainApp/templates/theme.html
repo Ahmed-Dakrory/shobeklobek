@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="-1" />
+      {%load static%}
+
+      
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/img/onlydispatch_icon.png">
+      <!--Start of the imports css-->
+      {% block importsData %}
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/mainStyle.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+     
+      {% endblock %}
+
+      {% block title %}
+        <title>ShobekLobek</title>
+        
+        {% endblock %}
+      <!--End of the imports css-->
+      </head>
+
+
+
+    <body>
+      <div id="loading">
+        <div id="loadingImg"  ></div>
+      </div>
+      
+<div class="containerMain">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-2">
+            <h2 class="text-muted" href="#">ShobekLobek</h2>
+          </div>
+
+          <div class="col-8 text-center">
+            <form class="form-inline borderAll">
+              <input class="form-search w-95 justify-content-center borderNone" type="text" placeholder="Search" aria-label="Search">
+              
+            <a class="btn borderNone" href="#"> <i class="fas fa-search active" aria-hidden="true"></i></a>
+             
+            </form>
+          </div>
+
+          <div class="col-1 justify-content-end align-items-center">
+            <a class="btn btn-sm btn-outline-secondary w-100" href="#">Sign up</a>
+          </div>
+
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="#">World</a>
+          <a class="p-2 text-muted" href="#">U.S.</a>
+          <a class="p-2 text-muted" href="#">Technology</a>
+          <a class="p-2 text-muted" href="#">Design</a>
+          <a class="p-2 text-muted" href="#">Culture</a>
+          <a class="p-2 text-muted" href="#">Business</a>
+          <a class="p-2 text-muted" href="#">Politics</a>
+          <a class="p-2 text-muted" href="#">Opinion</a>
+          <a class="p-2 text-muted" href="#">Science</a>
+          <a class="p-2 text-muted" href="#">Health</a>
+          <a class="p-2 text-muted" href="#">Style</a>
+          <a class="p-2 text-muted" href="#">Travel</a>
+        </nav>
+      </div>
+    </div>
+      <!--Start of the content-->
+      {% block content %}
+
+
+      {% endblock %}
+
+      <!--End of the content-->
+
+<!-- Footer -->
+  
+
+
+    <!--Start of the imports js-->
+    {% block javascripts %}
+ 
+    <script src="{% static '/js/jquery-3.3.1.slim.min.js' %}"></script> 
+    <script src="{% static '/js/bootstrap.min.js' %}"></script> 
+    {% endblock %}
+
+    {% block Extrajavascripts %}
+
+    {% endblock %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!--End of the imports js-->
+    
+    </body>
+</html>
